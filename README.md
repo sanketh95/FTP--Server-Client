@@ -16,25 +16,25 @@
 * To start client run `./client`  
 
 #### Server Help
+```
+$ ./server -h
+Usage: server [-h] [-v] [-p <port>] [-r <root directory>]
+Options:
+-h  This information
+-v  Set this option for more verbosity
+-p  Port to bind the server to
+-r  Root directory of the server
 
->$ ./server -h  
-Usage: server [-h] [-v] [-p <port>] [-r <root directory>]  
-Options:  
--h  This information  
--v  Set this option for more verbosity  
--p  Port to bind the server to  
--r  Root directory of the server  
-
->Default root directory: /srv/ftp  
-Default port: 22  
-
+Default root directory: /srv/ftp  
+Default port: 22
+```
 #### Client Help
-
->$ ./client -h  
-Usage: client [-h] [hostname/IP] [port]  
-Default hostname/IP is localhost  
-Default port is 22  
-
+```
+$ ./client -h
+Usage: client [-h] [hostname/IP] [port]
+Default hostname/IP is localhost
+Default port is 22
+```
 ### Technical Info
 
 Server and client uses a packet structure as follows
@@ -228,7 +228,7 @@ ftp>quit
 Exiting client ...
 ```
 #### Server Side
-
+```
 $ ./server 
 Waiting for connections ... 
 Connection from 127.0.0.1:35396
@@ -248,3 +248,4 @@ Is a directory
 No such file or directory
 Not a directory
 Connection closed
+```
